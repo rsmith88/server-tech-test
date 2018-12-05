@@ -1,0 +1,22 @@
+{
+  "name": "server-tech-test",
+  "version": "1.0.0",
+  "description": "server-tech-test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rsmith88/server-tech-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rsmith88/server-tech-test/issues"
+  },
+  "homepage": "https://github.com/rsmith88/server-tech-test#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
