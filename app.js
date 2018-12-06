@@ -1,6 +1,3 @@
-// To run linter: ./node_modules/.bin/eslint app.js
-// To run cypress: node_modules/.bin/cypress open
-
 const express = require('express')
 const app = express()
 const url = require('url')
