@@ -1,6 +1,6 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-const dataExports = require('./../data.js')
+const dataExports = require('./../lib/data.js')
 
 describe('Data', function() {
   let data = new dataExports.Data();
