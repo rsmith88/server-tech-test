@@ -11,13 +11,13 @@ app.get('/', function (req, res) {
 })
 
 app.get('/set', (req, res) => {
-  let params = url.parse(req.url, true).query
+  let params = url.URL(req.url, true).query
   console.log(params)
   res.send(data.set(params))
 })
 
 app.get('/get', (req, res) => {
-  let params = url.parse(req.url, true).query
+  let params = url.URL(req.url, true).query
   console.log(params)
   res.send(data.get(params))
 })
