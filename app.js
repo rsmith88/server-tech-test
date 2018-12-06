@@ -1,10 +1,28 @@
 // To run linter: ./node_modules/.bin/eslint app.js
-var express = require('express')
-var app = express()
+// To run cypress: node_modules/.bin/cypress open
+
+const express = require('express')
+const app = express()
+const url = require('url')
+const dataExports = require('./data.js')
+
+let data = new dataExports.Data()
 
 // Define request response in root URL (/)
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.send('testValue')
+})
+
+app.get('/set', (req, res) => {
+  let params = url.parse(req.url, true).query
+  console.log(params)
+  res.send(data.set(params))
+})
+
+app.get('/get', (req, res) => {
+  let params = url.parse(req.url, true).query
+  console.log(params)
+  res.send(data.get(params))
 })
 
 // Launch listening server on port 8080

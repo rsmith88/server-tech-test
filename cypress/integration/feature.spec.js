@@ -5,10 +5,8 @@ describe('Storing and retrieving data', () => {
 
     cy.request(`http://localhost:4000/set?${testKey}=${testValue}`)
     cy.request(`http://localhost:4000/get?key=${testKey}`)
+    // cy.request(`http://localhost:4000`)
       .its('body').should('equal', testValue)
 
   })
-
-
-
 })
