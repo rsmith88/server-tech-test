@@ -1,6 +1,14 @@
 # Database server tech test
-Practice tech test - setting up server using JS
+This a practice tech test involving the setup of a server in accordance with the instructions set out below.
 
+I completed this tech-test in javascript, using cypress for feature testing and mocha/chai for unit testing. I also used ESlint for formatting. I chose cypress and mocha/chai based on their reputations for being clean, easy-to-use testing frameworks. I chose ESlint for similar reasons.
+
+Instructions for using these tests and the linter are as follows:
+* To run ESlint: ./node_modules/.bin/eslint app.js
+* To run cypress: node_modules/.bin/cypress open
+* To run mocha: ./node_modules/mocha/bin/mocha
+
+In terms of the structure of my code, I used app.js to manage all of the server's routing responsibilities. data.js is responsible for saving and outputting data based on the params it receives.
 
 ## Instructions
 
